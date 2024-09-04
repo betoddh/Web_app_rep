@@ -1,3 +1,37 @@
-body {
-  margin: 0;
+img{
+            width: 150px;
+            
 }
+li{
+    text-decoration: underline;
+}
+.Flag{
+    display: block;
+  
+    width: 550px
+}
+
+.bsflag{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5cm;
+    margin-bottom:0.5cm;
+    width: 400px
+}
+.Place{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5cm;
+    margin-bottom: 0.5cm;
+    width: 700px
+
+}
+#top3_bad{
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+     
