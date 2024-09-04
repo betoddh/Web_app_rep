@@ -79,4 +79,19 @@ img{
     font-size: 16px;
     padding: 16px 32px;
   }
-     
+  .hdgroup:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .hdtext {
+    float: right;
+    width: 70%;
+  }
+  
+  .hdimages {
+    float: left;
+    width: 30%;
+    border-style: none;
+  }
