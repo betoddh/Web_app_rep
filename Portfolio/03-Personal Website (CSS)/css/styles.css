@@ -1,9 +1,6 @@
 img{
-            width: 150px;
-            
-}
-li{
-    text-decoration: underline;
+    width: 100px;
+    margin-top: auto;
 }
 .Flag{
     display: block;
@@ -25,7 +22,7 @@ li{
     margin-right: auto;
     margin-top: 0.5cm;
     margin-bottom: 0.5cm;
-    width: 700px
+    width: 700px;
 
 }
 #top3_bad{
@@ -35,10 +32,51 @@ li{
   width: 150px;
 }
 .memes{
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
-    margin-top: auto;
+    position:absolute;
+    left:0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
     width: 800px;
 }
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 400px;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 22.5%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #e22828;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
      
