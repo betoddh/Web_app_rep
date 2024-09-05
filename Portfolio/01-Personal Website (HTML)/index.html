@@ -4,59 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My personal website</title>
-    <nav>
-        <a href="/Portfolio/01-Personal Website (HTML)/destinations.html">Destinations</a>
-    </nav>
-    <hr>
+    
     <link href="/Portfolio/03-Personal Website (CSS)/css/styles.css" type="text/css" rel="stylesheet"/>
 
     
 
 </head>
-<body style="background-color: rgb(255, 255, 255);">
+<body style="background-color: #FFF8E8;">
     
-    <div class="hdgroup">
-        <div class="hdtext">
-            <h1>Alberto Stephen Dubin Hernandez </h1>
-            <h3>Student at Universidad panemericana. <a href="my_place.html" alt="link to my place" target="">My place :)</a></h3>
-            <p>Hello my name is Alberto but I like to be called Dubin or Beto.</p>
+   
 
-            <pre>
-            <i>Hello there</i>
-                    <i>-Obi-Wan Kenobi</i>
-            </pre>
+    
+    <div class="br_header">
+        <div class="hdgroup">
+            <div class="hdtext">
+                <h1>Alberto Stephen Dubin Hernandez </h1>
+                <h3>Student at Universidad panemericana. <a href="my_place.html" alt="link to my place" target="">My place :)</a></h3>
+                <p>Hello my name is Alberto but I like to be called Dubin or Beto.</p>
+    
+                <pre>
+                <i>Hello there</i>
+                        <i>-Obi-Wan Kenobi</i>
+    
+                <i>People call these things "imperfections," but they're not. That's the good stuff.
+                   And then we get to choose who we let into our weird little worlds.</i>
+                                            <i>-Robin Williams in good will hunting</i>
+                </pre>
+            </div>
+    
+            <div class="hdimage">
+                <img id="hdimage" src="./pic/Foto_beto_1.jpg" alt="Foto beto">
+            </div>
         </div>
 
-        <div class="hdimage">
-            <img href="./pic/Foto_beto_1.jpg" alt="Foto Beto">
-
-        </div>
-    
-    
     </div>
+    
+        <ul class="br_ul">
+            <li class="br_li"><a class="rn" href="./index.html">Home</a></li>
+            <li class="br_li"><a  href="./destinations.html"> Funny Destinations</a></li>
 
-    <hr> 
+        </ul>
+    
     <div>
     <p>These are some random <a href="destinations.html" alt="Link to destinations"
         target="">destinations</a> that I found funny! Yo can see my familie members birthdays <a href="#fambdays">Here</a> </p>
     </div>
-    <div>
-    <h2>Background</h2>
-    <p>
 
-    </p>
+    <div>
+        <h2>Background</h2>
+            <span>
+                I consider myself a not-that-normal person. I love to guide my lifestyle as personally as I can without care if my way is considered "Normal".
+                I love outdoor stuff, and since I was little, I have loved Star Wars and science fiction things, and everything that involves fantasy, to be honest. 
+                I aspire to be a software engineer specializing in cybersecurity.
+            </span>
     </div>
+
     <div>
     <h2> Education </h2>
-    </div>
-    <div>
-    <h2> Skills </h2>
+    <div class="row">
         <ol start="1">
-            <li>C++ programing</li>
+            <div class="column">
+                <div class="container">
+                    <li> 
+                        <img src="./pic/liceo.jpg" alt="Logo liceo del valle" class="image"/>
+                            <div class="middle">
+                                <div class="imtext"><a href="https://www.liceodelvalle.edu.mx/"> Liceo del valle 2009-2017</a></div>
+                            </div>
+                    </li>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="container">
+                    <li> 
+                        <img src="./pic/dime.jpeg" alt="Logo Dime" class="image"/>
+                            <div class="middle">
+                                <div class="imtext"><a href="https://www.dimeschool.com.mx/"> Dime 2018-2020</a></div>
+                            </div>
+                    </li>
+                </div>
+            </div>
+        
+            <div class="column">
+                <div class="container">
+                    <li> 
+                        <img src="./pic/up.jpg" alt="Logo up" class="image"/>
+                            <div class="middle">
+                                <div class="imtext"><a href="https://www.up.edu.mx/">UP</a></div>
+                            </div>
+                    </li>
+                </div>
+            </div>
         </ol>
     </div>
+
+    </div>
+
+    <div>
+    <h2> Skills </h2>
+    
+        <ol start="1">
+            <li>Handy man: 80%</li>
+            <li>Archery: 90%</li>
+            <li>Characters voices imitation: 70%</li>
+            <li>Rock climing: 30%</li>
+        </ol>
+    </div>
+
     <div>
     <h2>Hobbies</h2>
+    </div>
+
+    <div>
     <h3>Favorite food</h3> 
     <h4>Top 5 favorite foods</h4>
         <ol start="1">
@@ -70,7 +129,9 @@
         <a href="least_fav_food.html">
             <img id="top3_bad" src="./pic/gif/bad food.gif" style="width: 150px;">
         </a>
-       
+    </div>
+
+    <div>
     <h3>Books, movies & TV shows</h3>
     <ul> 
         <li>Books
@@ -82,33 +143,82 @@
         </li>
             
         <li><span>Movies</span>
-            <ol start="1">
-                <li> Good Will Hunting 
-                    <img src="./pic/Good_will_hunting.jpg" alt="Poster of Good will hunting"/>
-                </li>
-                <li> The amazing spider-man
-                    <img src="./pic/spider.jpg" alt="Poster The amazing spider-man"/>
-                </li>
-
-                <li> star-wars (Prequel and main trilogy) </li>
-            </ol>
-        </li>
-        <li>Tv shows
-            <ol start="1">
-                <div class="container">
-                <li> 
-                    <img src="./pic/full metal.jpg" alt="Poster Fullmetal Alchemmist Brotherhood" class="image"/>
-                    <div class="middle">
-                        <div class="text">Fullmetal Alchemist: Brotherhood</div>
+            <div class="row">
+                <ol start="1">
+                    <div class="column">
+                        <div class="container">
+                            <li> 
+                                <img src="./pic/Good_will_hunting.jpg" alt="Poster Good_will_hunting" class="image"/>
+                                    <div class="middle">
+                                        <div class="imtext">Good_will_hunting</div>
+                                    </div>
+                            </li>
+                        </div>
                     </div>
-                </li>
-                </div>
-                <li> This is us</li>
 
-                <li>star-wars the clone wars
-                    <img src="./pic/swcw.jpg" alt="Poster star-wars the clone wars"/>
-                </li>
-            </ol>
+                    <div class="column">
+                        <div class="container">
+                            <li> 
+                                <img src="./pic/spider.jpg" alt="Poster The amazing Spider-Man" class="image"/>
+                                    <div class="middle">
+                                        <div class="imtext">The_amazing_Spider_Man</div>
+                                    </div>
+                            </li>
+                        </div>
+                    </div>
+                
+                    <div class="column">
+                        <div class="container">
+                            <li> 
+                                <img src="./pic/big_fish.jpg" alt="Poster Big big_fish" class="image"/>
+                                    <div class="middle">
+                                        <div class="imtext">Big_fish</div>
+                                    </div>
+                            </li>
+                        </div>
+                    </div>
+                </ol>
+            </div>
+        </li>
+
+        <li>Tv shows
+            <div class="row">
+                <ol start="1">
+                    <div class="column">
+                        <div class="container">
+                            <li> 
+                                <img src="./pic/full metal.jpg" alt="Poster Fullmetal Alchemmist Brotherhood" class="image"/>
+                                    <div class="middle">
+                                        <div class="imtext">Fullmetal_Alchemist: Brotherhood</div>
+                                    </div>
+                            </li>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="container">
+                            <li> 
+                                <img src="./pic/this_is_us.jpg" alt="Poster This is us" class="image"/>
+                                    <div class="middle">
+                                        <div class="imtext">This_is_us</div>
+                                    </div>
+                            </li>
+                        </div>
+                    </div>
+                
+
+                    <div class="column">
+                        <div class="container">
+                            <li> 
+                                <img src="./pic/Ted_Lasso.jpg" alt="Poster Ted_Lasso" class="image"/>
+                                    <div class="middle">
+                                        <div class="imtext">Ted_Lasso</div>
+                                    </div>
+                            </li>
+                        </div>
+                    </div>
+                </ol>
+            </div>
         </li>
     </ul>
     </div>
