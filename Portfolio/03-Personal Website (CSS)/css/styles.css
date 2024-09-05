@@ -1,8 +1,11 @@
 
 .Flag{
     display: block;
-  
-    width: 550px
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5cm;
+    margin-bottom:0.5cm;
+    width: 400px
 }
 
 .bsflag{
@@ -145,4 +148,11 @@ li a:hover{
   * {
     box-sizing: border-box;
   }
+  ol{
+    font-size: 20px;
+  }
+  p{
+    font-size: 20px;
+  }
+  
   

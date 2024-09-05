@@ -52,11 +52,11 @@
 
     <div>
         <h2>Background</h2>
-            <span>
+            <p>
                 I consider myself a not-that-normal person. I love to guide my lifestyle as personally as I can without care if my way is considered "Normal".
                 I love outdoor stuff, and since I was little, I have loved Star Wars and science fiction things, and everything that involves fantasy, to be honest. 
                 I aspire to be a software engineer specializing in cybersecurity.
-            </span>
+            </p>
     </div>
 
     <div>
@@ -113,6 +113,14 @@
 
     <div>
     <h2>Hobbies</h2>
+    <ol>
+        <li>Video games</li>
+        <li>Rock climbing</li>
+        <li>Lego building</li>
+        <li>Driving Motorcycles</li>
+        <li>Fixing stuff</li>
+    </ol>
+
     </div>
 
     <div>
@@ -136,9 +144,42 @@
     <ul> 
         <li>Books
             <ol start="1">
-                <li> El hombre en busca del sentido</li>
-                <li> Hunger games</li>
-                <li> Coming soon: La bailarina de auschwitz </li>
+                <div class="row">
+                    <ol start="1">
+                        <div class="column">
+                            <div class="container">
+                                <li> 
+                                    <img src="./pic/El hombre.jpg" alt="Portada el hombre en busca del sentido" class="image"/>
+                                        <div class="middle">
+                                            <div class="imtext">El hombre en busca del sentido</div>
+                                        </div>
+                                </li>
+                            </div>
+                        </div>
+    
+                        <div class="column">
+                            <div class="container">
+                                <li> 
+                                    <img src="./pic/hunger _games.jpg" alt="Portada Hunger games" class="image"/>
+                                        <div class="middle">
+                                            <div class="imtext">The_Hunger_Games</div>
+                                        </div>
+                                </li>
+                            </div>
+                        </div>
+                    
+                        <div class="column">
+                            <div class="container">
+                                <li> 
+                                    <img src="./pic/Maze.jpg" alt="Portada Maze runner" class="image"/>
+                                        <div class="middle">
+                                            <div class="imtext">Maze runner</div>
+                                        </div>
+                                </li>
+                            </div>
+                        </div>
+                    </ol>
+                </div>
             </ol>
         </li>
             
@@ -264,9 +305,70 @@
 
     <div>
         <h2>Agenda</h2>
+        <hr>
         <form>
-            <input type="text"/>
+            <label for="Date">Date:</label>
+            <input type="date" id="Date" name="Date">
+            <input type="submit"> 
         </form>
+        <hr>
+        <form>
+            <label for="Time start">Start Time:</label>
+            <input type="time" id="Time_star" name="Time_s">
+            <input type="submit"> 
+        </form>
+        <hr>
+        <form>
+            <label for="endTime">End time:</label>
+            <input type="time" id="endTime" name="endTime">
+            <input type="submit"> 
+        </form>
+        <hr>
+        <form>
+            <label for="Activity">Activity:</label>
+            <input type="text" id="Act" name="Act">
+            <input type="submit"> 
+        </form>
+        <hr>
+        <form>
+            <label for="place">Place:</label>
+            <input type="place" id="place" name="place">
+            <input type="submit"> 
+        </form>
+        <hr>
+        <form>
+            <input list="Type" name="Type">
+            <datalist id="Type">
+            <option value="School">
+            <option value="Personal">
+            <option value="Familiar">
+            <option value="Profesional">
+            <option value="other"> 
+            </datalist>
+            
+        </form>
+        <hr>
+        <form>
+            <textarea name="message" rows="10" cols="30">
+                
+            </textarea>
+        </form>
+        <hr>
+        <form>
+            <label for="color">Choose color:</label>
+            <input type="color" id="color" name="color">
+            <input type="submit"> 
+        </form>
+        <hr>
+        <form>
+            <label for="availability">Fee? Y/N</label>
+            <select id="availability" name="availability">
+            <option value="free">Yes</option>
+            <option value="busy">No</option>
+            </select>
+        </form>
+        <hr>
+
     </div>
 
 </body>
