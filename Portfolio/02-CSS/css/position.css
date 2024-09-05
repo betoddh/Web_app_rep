@@ -1,3 +1,73 @@
 body {
     margin: 0;
 }
+.squr_top{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    display: block;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    
+}
+.squr_mid{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: block;
+}
+.squr_bott{
+    height: 100px;
+    width: 100px;
+    margin: 0;
+    background-color: yellow;
+    border: 0;
+    padding: 0;
+    display: block;
+}
+P{
+    padding: 0;
+    margin:0;
+}
+
+.squr_topR{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    display: inline-block;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    position: relative;
+    top: 15px;
+    left: 205px;
+    
+}
+.squr_midR{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+    right: 105px;
+    top:15px;
+}
+.squr_bottR{
+    height: 100px;
+    width: 100px;
+    margin: 0;
+    background-color: yellow;
+    border: 0;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+    top: 15px;
+    right: 106px;
+}
