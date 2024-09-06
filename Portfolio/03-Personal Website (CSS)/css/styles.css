@@ -1,4 +1,7 @@
 
+ul{
+  text-align: center;
+}
 .Flag{
     display: block;
     margin-left: auto;
@@ -92,16 +95,18 @@
     float:right;
     position: relative;
     top: 20px;
-    right: 44%;
+    right: 20%;
     width: 40%;
     margin: 0;
     padding: 10px;
+    text-align: center;
     
   }
   #hdimage{
     width: 250px;
     padding: 0;
     margin: 0;
+    align-items: center;
   }
   img{
     width: 100px;
@@ -135,8 +140,8 @@ li a:hover{
 }
 .column {
     float: left;
-    width: 33.33%;
-    padding: 5px;
+    width: 33.3%;
+    padding: 10px;
   }
   
   
@@ -147,12 +152,23 @@ li a:hover{
   }
   * {
     box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    text-align: center;
   }
-  ol{
-    font-size: 20px;
+  div.cont {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    
+  }
+  ol.cent{
+    display: inline-block;
+  text-align: left;
+  font-family: 'Merriweather', serif;
+  padding: 0px;
   }
   p{
     font-size: 20px;
+    font-family: 'Merriweather', serif;
   }
   #pic_M{
     width: 500px;
@@ -174,4 +190,89 @@ li a:hover{
     font-size: larger;
     
   }
+  .tx_all{
+    text-align: justify;
+  }
+  li{
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    
+  }
+  ol{
+    font-family: 'Merriweather', serif;
+  }
+  table{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1{
+    font-family: 'Sacramento', cursive;
+    color: #674636;
+    font-size: 5.5rem;
+    margin: 50px;
+  }
+  h2{
+    font-family:'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+    color: #a35e3b;
+  }
+  h3{
+    font-family:'Montserrat', sans-serif ;
+    color:#5e3724 ;
+  }
+  a{
+    text-decoration: none;
+    font-weight: bold ;
+  }
+  a:hover{
+    color: rgb(3, 145, 3);
+  }
+  hr{
+    border-top: 6px dotted #EAF6F6 ;
+    border-bottom: none;
+    width: 4vw;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .divfom{
+    border-style: dotted;
+    background-color: #AAB396 ;
+    width: 50%;
+    margin: auto;
+  }
   
+  input{
+    border-radius: 45px;
+    background-color: #674636;
+  }
+ textarea{
+  border-radius: 45px;
+    background-color: #674636;
+ }
+ label{
+  border-radius: 45px;
+    background-color: #674636;
+ }
+ option{
+  border-radius: 45px;
+    background-color: #674636;
+ }
+ select{
+  border-radius: 45px;
+    background-color: #674636;
+ }
+ .mon{
+  width: 50%;
+  position:static;
+  
+ }
+ .clol{
+  position: sticky;
+  top: 67px;
+  
+ }
+ .clor{
+  position: sticky;
+  
+ }
