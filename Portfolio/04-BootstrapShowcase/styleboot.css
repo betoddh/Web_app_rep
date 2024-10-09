@@ -1,0 +1,25 @@
+#bod {
+    background-color: rgb(99, 110, 117);
+    color: #e0e0e0;
+  }
+.BT{
+    font-family: "Blinker", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    margin: 0;
+    height: 30%;
+}
+.BH{
+    background-color: rgb(135, 150, 160);
+    height: 100%;
+}
+hr{
+    border: 20%;
+}
+.pad{
+    padding-bottom: 3%;
+}
+.cont1{
+    width: 50%;
+}
+

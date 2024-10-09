@@ -63,8 +63,8 @@ ul{
     position: absolute;
     top: 50%;
     left: 65%;
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%)
     
   }
   
@@ -275,4 +275,10 @@ li a:hover{
  .clor{
   position: sticky;
   
+ }
+ .lf{
+  width: 30%;
+ }
+ body{
+  background-color: #FFF8E8;
  }
