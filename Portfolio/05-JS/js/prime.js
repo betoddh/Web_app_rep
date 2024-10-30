@@ -20,8 +20,11 @@ var getPrimeFactors = function (n) {
   var i,
     sequence = [];
 
+    
+
   //TODO: Check which numbers are factors of n and also check if
   // that number also happens to be a prime
+
 
   return sequence;
 };

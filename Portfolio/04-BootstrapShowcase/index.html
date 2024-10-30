@@ -6,13 +6,32 @@
     <link href="/Portfolio/04-BootstrapShowcase/styleboot.css"  type="text/css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" ></script>
     <title>Bootstrap</title>
 </head>
 <body id ="bod">
+
+  <script>
+    function bup(){
+      alert("Button clicked");
+    }
+
+    function war(){
+      alert("warning! incoming... o nothing hapens!");
+    }
+    function Left(){
+      alert("left button clicked");
+    }
+    function Middle(){
+      alert("Middle button clicked");
+    }
+    function Right(){
+      alert("Right button clicked");
+    }
+  </script>
     
 
-<div class="pad">
+  <div class="pad">
     <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="/Portfolio/04-BootstrapShowcase/index.html">Inicio</a>
@@ -37,7 +56,7 @@
                     Dropdown
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="/Portfolio/04-BootstrapShowcase/na/page3.html">Login</a></li>
                     <li><a class="dropdown-item" href="#">Another action</a></li>
                     <li>
                       <hr class="dropdown-divider">
@@ -58,49 +77,346 @@
 </div>
 
 <div class="cont1">
-    <div>
-        <h2>Fun fact</h2>
+  <div>
+      <h2>Fun Facts</h2>
 
-        <div class="accordion" id="accordionPanelsStayOpenExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                    Accordion Item #1
-                </button>
-                </h2>
-                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                    Accordion Item #2
-                </button>
-                </h2>
-                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                    Accordion Item #3
-                </button>
-                </h2>
-                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-                </div>
-            </div>
-        </div>
-    </div>
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+              <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  #1 Star Wars
+              </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                The famous "I am your father" line was a secret: To avoid leaks, the script for *The Empire Strikes Back* said that Darth Vader would tell Luke, "Obi-Wan killed your father." Only a few people, including Mark Hamill, knew the real line.
+              </div>
+              </div>
+          </div>
+
+          <div class="accordion-item">
+              <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  #2 Indiana Jones
+              </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Indiana Jones was almost played by Tom Selleck! Harrison Ford wasn't the first choice for the role. Tom Selleck had to drop out due to scheduling conflicts with *Magnum, P.I.*, which led Ford to take on the iconic role.
+              </div>
+              </div>
+          </div>
+
+          <div class="accordion-item">
+              <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  #3 The Legend of Zelda
+              </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Link’s name has a deeper meaning: The name "Link" was chosen because the character was meant to be a “link” between the player and the game world. Originally, the game was going to involve time travel, and Link was also intended to be a “link” between different eras.
+              </div>
+              </div>
+          </div>
+
+          <div class="accordion-item">
+              <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                  #4 Super Mario
+              </button>
+              </h2>
+              <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Did you know? Super Mario was originally known as “Jumpman” in *Donkey Kong* before he became Nintendo’s mascot!
+              </div>
+              </div>
+          </div>
+
+          <div class="accordion-item">
+              <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                  #5 James Earl Jones' Double Role
+              </button>
+              </h2>
+              <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                The voice of Darth Vader and Mufasa is the same: James Earl Jones provided the iconic voices for both Darth Vader in *Star Wars* and Mufasa in *The Lion King*.
+              </div>
+              </div>
+          </div>
+
+          <div class="accordion-item">
+              <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                  #6 Ghostbusters Theme Song
+              </button>
+              </h2>
+              <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                The original *Ghostbusters* theme song was a last-minute addition: Ray Parker Jr. was given only a few days to write the now-famous theme song after other musicians turned down the project.
+              </div>
+              </div>
+          </div>
+
+          <div class="accordion-item">
+              <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
+                  #7 Harry Potter's Actors Almost Switched Roles
+              </button>
+              </h2>
+              <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                In the *Harry Potter* movies, Tom Felton (Draco Malfoy) originally auditioned for the roles of both Harry Potter and Ron Weasley before being cast as the villainous Draco.
+              </div>
+              </div>
+          </div>
+
+          <div class="accordion-item">
+              <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="panelsStayOpen-collapseEight">
+                  #8 *Friends* Alternate Title
+              </button>
+              </h2>
+              <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                *Friends* was almost called *Insomnia Café*: Before settling on *Friends*, the creators considered several other titles, including *Six of One* and *Friends Like Us*.
+              </div>
+              </div>
+          </div>
+
+          <div class="accordion-item">
+              <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false" aria-controls="panelsStayOpen-collapseNine">
+                  #9 Breaking Bad Logo
+              </button>
+              </h2>
+              <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                The *Breaking Bad* logo is a clever nod to chemistry: The Br (for Bromine) and Ba (for Barium) in the title sequence reference elements from the periodic table.
+              </div>
+              </div>
+          </div>
+
+          <div class="accordion-item">
+              <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false" aria-controls="panelsStayOpen-collapseTen">
+                  #10 The Beatles and *Lord of the Rings*
+              </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                The Beatles wanted to make a *Lord of the Rings* movie: They even approached Stanley Kubrick to direct, but J.R.R. Tolkien refused to sell them the film rights.
+              </div>
+              </div>
+          </div>
+      </div>
+  </div>
 </div>
 
+<div>
+  <h1>Button</h1>
+  <button onclick="bup()" type="button" class="btn btn-primary" >Primary</button>
+  <button onclick="bup()" type="button" class="btn btn-secondary">Secondary</button>
+  <button onclick="bup()" type="button" class="btn btn-success">Success</button>
+  <button onclick="bup()" type="button" class="btn btn-danger">Danger</button>
+  <button onclick="war()" type="button" class="btn btn-warning">Warning</button>
+  <button onclick="bup()" type="button" class="btn btn-info">Info</button>
+  <button onclick="bup()" type="button" class="btn btn-light">Light</button>
+  <button onclick="bup()" type="button" class="btn btn-dark">Dark</button>
+
+  <button  type="button" class="btn btn-link"><a href="./na/page2.html">Link</a></button>
+</div>
+
+<div>
+  <hr>
+  <h1>Button group</h1>
+  <div class="btn-group" role="group" aria-label="Basic example">
+    <button onclick="Left()" type="button" class="btn btn-primary">Left</button>
+    <button onclick="Middle()"type="button" class="btn btn-primary">Middle</button>
+    <button onclick="Right()"type="button" class="btn btn-primary">Right</button>
+  </div>
+
+</div>
+
+<div>
+  <hr>
+  <h1>Card</h1>
+  <div class="card" style="width: 18rem;">
+    <a href="https://www.nhs.uk/conditions/alzheimers-disease/symptoms/"><img src="./na/Img/meme1.jpeg" class="card-img-top" alt="Big funy 1 .jpeg"></a>
+    <div class="card-body">
+      <p class="card-text">OOOOO no something's wrong i can feel it</p>
+    </div>
+  </div>
+  
+</div>
+
+<div>
+  <hr>
+  <h1>MODAL...(but secretly is all about crabs)</h1>
+    <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Info about a crab
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Crab</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Crabs are crustaceans with a hard exoskeleton, called a carapace, which protects their body. They molt periodically, shedding the old exoskeleton to grow.<br> Most crabs have two large claws, or pincers, which they use for defense, capturing food, and communication.<br> Crabs usually have a broad, flattened body with a compact shape, often making them look circular or oval.<br> Many crab species have eyes on stalks that allow them to survey their environment while keeping most of their body hidden.<br> Crabs have two sets of antennae that help them sense their surroundings and find food.<br>
+
+          Unlike many other animals, crabs typically walk sideways. Their legs are structured to move more easily in a lateral direction, which helps them move quickly in tight spaces or on uneven surfaces.<br>
+
+          While many crabs are marine animals living in saltwater, some species are terrestrial and even live in freshwater.<br> They are commonly found in coastal regions, such as beaches, mangroves, and estuaries, and some even live entirely on land.<br>
+
+          Crabs are generally omnivores, meaning they eat both plant and animal matter.<br> Their diet can include algae, plankton, small fish, detritus, and other organic material.<br>
+
+          Many crabs communicate through body language, especially using their claws to signal aggression or attract mates.<br> Crabs often defend their space and burrows from intruders, especially during mating season.<br> Crabs like to hide in burrows, rocks, or sand to protect themselves from predators and harsh environmental conditions.<br>
+
+          Crabs have unique mating behaviors that vary by species, including intricate dances, claw waving, and even sound production.<br> Female crabs lay hundreds to thousands of eggs, which they often carry in a special abdominal pouch until they’re ready to hatch.<br>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div>
+  <hr>
+  <h1>POP</h1>
+  <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="Hola...this is awkuard">Click to toggle popover</button>
+</div>
+
+<div>
+  <hr>
+  <h1>progress bar</h1>
+  <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 50%"></div>
+  </div>
+</div>
+
+<div>
+  <hr>
+  <h1>Spinner</h1>
+  <div class="spinner-border text-primary" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-border text-secondary" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-border text-success" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-border text-danger" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-border text-warning" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-border text-info" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-border text-light" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-border text-dark" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-grow text-primary" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-grow text-secondary" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-grow text-success" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-grow text-danger" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-grow text-warning" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-grow text-info" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-grow text-light" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-grow text-dark" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+
+
+<div>
+  <hr>
+  <h1>Tooltips</h1>
+  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="Click <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' target='_blank'>here</a>">
+    Tooltip with HTML
+  </button>
+</div>
+
+<div class="bs-border-color-rgb(200,200,200)">
+  <hr>
+  <h1>Iconic link</h1>
+  <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Primary link</a></p>
+  <p><a href="https://www.youtube.com/watch?v=of4aFbUKjbk" class="link-success-custom2 link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Secondary link</a></p>
+  <p><a href="https://www.youtube.com/watch?v=of4aFbUKjbk" class="link-success-custom link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Success link</a></p>
+  <p><a href="https://www.youtube.com/watch?v=yK0P1Bk8Cx4" class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Danger link</a></p>
+  <p><a href="https://www.youtube.com/watch?v=LeeSfAEowuk" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Warning link</a></p>
+  <p><a href="https://www.youtube.com/watch?v=kPRA0W1kECg" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Info link</a></p>
+  <p><a href="https://www.youtube.com/watch?v=6vMrdTlwrIU" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Light link</a></p>
+  <p><a href="https://www.youtube.com/watch?v=TimKU5bAEDQ" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Dark link</a></p>
+  <p><a href="https://www.youtube.com/watch?v=KC6T3_O2iWc" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">Emphasis link</a></p>
+</div>
+
+<div>
+  <hr>
+  <h1>Floating labels</h1>
+  <div class="form-floating mb-3">
+    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+    <label for="floatingInput">Email address</label>
+  </div>
+  <div class="form-floating">
+    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+    <label for="floatingPassword">Password</label>
+  </div>
+  
+  <form class="form-floating">
+  <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="test@example.com">
+  <label for="floatingInputValue">Input with value</label>
+</form>
+  
+</div>
+
+<div>
+  <hr>
+  <h1>Borders & background</h1>
+  <div class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+    Example element with utilities
+  </div>
+</div>
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl);
+    });
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  });
+</script>
 </body>
 </html>
