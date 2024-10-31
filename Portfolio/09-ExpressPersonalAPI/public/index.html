@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Test</title>
+</head>
+<body>
+    
+    <form id="greetForm">
+        Register:
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="submit" value="go next">
+    </form>
+    
+    <div id="greetings"></div> 
+    
+    <h2>TODO List</h2>
+    
+    <form id="taskForm">
+        Add task:
+        <input type="text" name="task" placeholder="New task" required>
+        <input type="submit" value="Add">
+    </form>
+
+    <ul id="taskList"></ul> 
+
+    <script>
+        document.getElementById("greetForm").addEventListener("submit", async (event) => {
+            event.preventDefault();
+
+            const formData = new FormData(event.target);
+            const name = formData.get("name");
+
+            // Enviar nombre al endpoint /greet
+            const response = await fetch(`/greet?name=${name}`);
+            const names = await response.json();
+
+            // Actualizar la lista de saludos
+            const greetingsDiv = document.getElementById("greetings");
+            greetingsDiv.innerHTML = "";
+
+            names.forEach(name => {
+                const nameLink = document.createElement("a");
+                nameLink.href = `/wazzup?name=${name}`;
+                nameLink.textContent = `Wazzup, ${name}`;
+                greetingsDiv.appendChild(nameLink);
+                greetingsDiv.appendChild(document.createElement("br"));
+            });
+        });
+
+        document.getElementById("taskForm").addEventListener("submit", async (event) => {
+            event.preventDefault();
+
+            const formData = new FormData(event.target);
+            const task = formData.get("task");
+
+            
+            await fetch("/task", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ task })
+            });
+
+            loadTasks();
+        });
+
+        async function loadTasks() {
+            const response = await fetch("/task");
+            const tasks = await response.json();
+
+            const taskList = document.getElementById("taskList");
+            taskList.innerHTML = "";
+
+            tasks.forEach((task, index) => {
+                const taskItem = document.createElement("li");
+                taskItem.textContent = task;
+
+                // Botón de eliminar
+                const deleteButton = document.createElement("button");
+                deleteButton.textContent = "Delete";
+                deleteButton.onclick = async () => {
+                    await fetch(`/task/${index}`, { method: "DELETE" });
+                    loadTasks();
+                };
+
+                // Botones de movimiento
+                const upButton = document.createElement("button");
+                upButton.textContent = "↑";
+                upButton.onclick = async () => {
+                    await fetch(`/task/${index}/up`, { method: "PATCH" });
+                    loadTasks();
+                };
+
+                const downButton = document.createElement("button");
+                downButton.textContent = "↓";
+                downButton.onclick = async () => {
+                    await fetch(`/task/${index}/down`, { method: "PATCH" });
+                    loadTasks();
+                };
+
+                taskItem.appendChild(upButton);
+                taskItem.appendChild(downButton);
+                taskItem.appendChild(deleteButton);
+                taskList.appendChild(taskItem);
+            });
+        }
+
+        loadTasks(); 
+    </script>
+</body>
+</html>

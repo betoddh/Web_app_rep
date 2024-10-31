@@ -1,19 +1,67 @@
-const express = require("express");
+const express = require('express');
 const app = express();
 const https = require("https");
+const FormData=require("form-data");
 
-// TODO: configure the express server
 
-const longContent =
-  "Lacus vel facilisis volutpat est velit egestas dui id ornare. Semper auctor neque vitae tempus quam. Sit amet cursus sit amet dictum sit amet justo. Viverra tellus in hac habitasse. Imperdiet proin fermentum leo vel orci porta. Donec ultrices tincidunt arcu non sodales neque sodales ut. Mattis molestie a iaculis at erat pellentesque adipiscing. Magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Adipiscing elit ut aliquam purus sit amet luctus venenatis lectus. Ultrices vitae auctor eu augue ut lectus arcu bibendum at. Odio euismod lacinia at quis risus sed vulputate odio ut. Cursus mattis molestie a iaculis at erat pellentesque adipiscing.";
 
-let posts = [];
-let name;
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
+app.use(express.static("public"));//route for static objects 
+app.engine("ejs", require("ejs").renderFile);
+app.set("view engine", "ejs");
+
+let posts = []; // Lista para almacenar los posts
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/public/html/index.html");
+  res.render("home", { name: null, method: null, posts: [] }); // Inicialmente sin saludo
 });
 
-app.listen(3000, (err) => {
+app.get("/login", (req, res) => {
+  const name = req.query.name || "Guest"; 
+  res.render("home", { name, method: "GET", posts });
+});
+
+app.post("/login", (req, res) => {
+  const name = req.body.name || "Guest"; 
+  res.render("home", { name, method: "POST", posts });
+});
+
+app.post("/newpost", (req, res) => {
+  const { title, content } = req.body;
+  const id = posts.length + 1; // Generar un ID simple
+  posts.push({ id, title, content });
+  res.redirect(`/login?name=${req.body.name}`); // Redirigir con el nombre del usuario
+});
+
+app.get("/post/:id", (req, res) => {
+  const post = posts.find(p => p.id === parseInt(req.params.id));
+  if (post) {
+    res.render("post", { post });
+  } else {
+    res.status(404).send("Post not found");
+  }
+});
+
+app.post("/editpost/:id", (req, res) => {
+  const { id } = req.params;
+  const { title, content } = req.body;
+  const post = posts.find(p => p.id === parseInt(id));
+  if (post) {
+    post.title = title;
+    post.content = content;
+    res.redirect(`/post/${id}`);
+  } else {
+    res.status(404).send("Post not found");
+  }
+});
+
+app.post("/deletepost/:id", (req, res) => {
+  const { id } = req.params;
+  posts = posts.filter(p => p.id !== parseInt(id));
+  res.redirect(`/login?name=${req.body.name}`); // Redirigir con el nombre del usuario
+});
+
+app.listen(3000, () => {
   console.log("Listening on port 3000");
 });
