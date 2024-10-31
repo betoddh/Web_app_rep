@@ -1,3 +1,284 @@
-body {
-  margin: 0;
+
+ul{
+  text-align: center;
 }
+.Flag{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5cm;
+    margin-bottom:0.5cm;
+    width: 400px
+}
+
+.bsflag{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5cm;
+    margin-bottom:0.5cm;
+    width: 400px
+}
+.Place{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5cm;
+    margin-bottom: 0.5cm;
+    width: 700px;
+
+}
+#top3_bad{
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+.memes{
+    position:absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 800px;
+}
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 400px;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .imtext {
+    background-color: #674636;
+    color: white;
+    font-size: 20px;
+    padding: 10px 70px;
+    text-align: center;
+    
+  }
+  .hdgroup:after {
+    content: "";
+    display: table;
+    clear: both;
+
+  }
+  
+  .hdtext {
+    float:right;
+    position: relative;
+    top: 20px;
+    right: 20%;
+    width: 40%;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    
+  }
+  #hdimage{
+    width: 250px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
+  img{
+    width: 100px;
+    margin-top: auto;
+}
+.br_ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.br_li{
+    float: left;
+}  
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: #111;
+}
+.rn{
+    background-color: #AAB396;
+}
+.column {
+    float: left;
+    width: 33.3%;
+    padding: 10px;
+  }
+  
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  * {
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+  }
+  div.cont {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    
+  }
+  ol.cent{
+    display: inline-block;
+  text-align: left;
+  font-family: 'Merriweather', serif;
+  padding: 0px;
+  }
+  p{
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+  }
+  #pic_M{
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5cm;
+    margin-bottom:0.5cm;
+  }
+  #pic_M2{
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5cm;
+    margin-bottom:0.5cm;
+  }
+  td{
+    font-size: larger;
+    
+  }
+  .tx_all{
+    text-align: justify;
+  }
+  li{
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    
+  }
+  ol{
+    font-family: 'Merriweather', serif;
+  }
+  table{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1{
+    font-family: 'Sacramento', cursive;
+    color: #674636;
+    font-size: 5.5rem;
+    margin: 50px;
+  }
+  h2{
+    font-family:'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+    color: #a35e3b;
+  }
+  h3{
+    font-family:'Montserrat', sans-serif ;
+    color:#5e3724 ;
+  }
+  a{
+    text-decoration: none;
+    font-weight: bold ;
+  }
+  a:hover{
+    color: rgb(3, 145, 3);
+  }
+  hr{
+    border-top: 6px dotted #EAF6F6 ;
+    border-bottom: none;
+    width: 4vw;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .divfom{
+    border-style: dotted;
+    background-color: #AAB396 ;
+    width: 50%;
+    margin: auto;
+  }
+  
+  input{
+    border-radius: 45px;
+    background-color: #674636;
+  }
+ textarea{
+  border-radius: 45px;
+    background-color: #674636;
+ }
+ label{
+  border-radius: 45px;
+    background-color: #674636;
+ }
+ option{
+  border-radius: 45px;
+    background-color: #674636;
+ }
+ select{
+  border-radius: 45px;
+    background-color: #674636;
+ }
+ .mon{
+  width: 50%;
+  position:static;
+  
+ }
+ .clol{
+  position: sticky;
+  top: 67px;
+  
+ }
+ .clor{
+  position: sticky;
+  
+ }
+ .lf{
+  width: 30%;
+ }
+ body{
+  background-color: #FFF8E8;
+ }

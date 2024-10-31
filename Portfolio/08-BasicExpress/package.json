@@ -1,0 +1,19 @@
+{
+  "name": "08-basicexpress",
+  "version": "1.0.0",
+  "description": "express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "express",
+    "node"
+  ],
+  "author": "Beto",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}

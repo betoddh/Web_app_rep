@@ -26,7 +26,9 @@ var myGameArea = {
   },
   // Definition of function clear via a prototype
   clear: function () {
+
     this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+
   },
 };
 
@@ -63,9 +65,11 @@ function component(width, height, color, x, y, type) {
     if (this.type == "image") {
       if (this.x >= canvasWidth - this.width / 2 || this.x <= 0) {
         //TODO: make the image bounce back when reaching the edges
+        this.speedX *= -1;
       }
       if (this.y >= canvasHeight - this.height / 2 || this.y <= 0) {
         //TODO: make the image bounce back when reaching the edges
+        this.speedY *= -1;
       }
     }
   };
@@ -84,10 +88,12 @@ function moveup() {
 }
 
 function movedown() {
+  myGamePiece.speedY += 1;
   //TODO: implement the move down functionality
 }
 
 function moveleft() {
+  myGamePiece.speedX -= 1;
   //TODO: implement the move left functionality
 }
 

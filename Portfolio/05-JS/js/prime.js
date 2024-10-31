@@ -5,6 +5,7 @@
 
 var getPrimeFactors = function (n) {
   "use strict";
+  var n = document.getElementById("num").value;
 
   function isPrime(n) {
     var i;
@@ -20,14 +21,22 @@ var getPrimeFactors = function (n) {
   var i,
     sequence = [];
 
+    for (i=2; i <= n; i++){
+      while (n % i === 0 && isPrime(i)) {
+        sequence.push(i);
+        n /= i;
+      }
+    }
+
     
+
 
   //TODO: Check which numbers are factors of n and also check if
   // that number also happens to be a prime
 
-
-  return sequence;
+    //return sequence;
+  document.getElementById("pf").textContent = "The prime factors of " + n + " are: " + sequence.join(", ");
 };
 
 // the prime factors for this number are: [ 2, 3, 5, 7, 11, 13 ]
-console.log(getPrimeFactors(30030));
+console.log(getPrimeFactors(30));

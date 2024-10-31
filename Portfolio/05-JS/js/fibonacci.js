@@ -18,10 +18,12 @@ function f(n) {
     value = memo[n];
   } else {
     //TODO: Implement the fibonacci function here!
-
+    for (var i = 2; i <= n; i++) {
+      value = f(i - 1) + f(i - 2);
+    }
     memo[n] = value;
   }
 
-  return value;
+  document.getElementById("fibonacciLbl").textContent = "The " + n + "th number in the Fibonacci sequence is: " + value;
 }
 console.log(fibonacci(15));
